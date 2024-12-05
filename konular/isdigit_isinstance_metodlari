@@ -1,0 +1,40 @@
+1. isdigit() Metodu:
+isdigit() bir string metodu olup, bir string'in sadece rakamlardan oluşup oluşmadığını kontrol eder. Eğer string'deki tüm karakterler rakam ise True döner, aksi takdirde False döner.
+
+Ne zaman kullanılır?: Bir string'in sadece rakam olup olmadığını kontrol etmek için kullanılır.
+Kullanım amacı: Özellikle kullanıcıdan alınan girdinin tamamen sayılardan oluşup oluşmadığını kontrol etmek için idealdir. Çünkü kullanıcı girişi her zaman bir string olarak gelir, bu yüzden sayısal bir değeri string olarak kontrol etmek için isdigit() kullanılır.
+Örnek:
+
+
+s = "12345"
+print(s.isdigit())  # True çünkü sadece rakamlar var
+
+s = "12a34"
+print(s.isdigit())  # False çünkü "a" harfi var
+Neden isdigit() kullandım?
+
+Kullanıcıdan alınan input her zaman bir string'dir, bu nedenle isdigit() metodunu kullanarak, her karakterin sayısal olup olmadığını kontrol ediyorum. Böylece, sadece rakamlardan oluşan bir giriş ile işlemi sürdürüyorum.
+2. isinstance() Fonksiyonu:
+isinstance() fonksiyonu, bir nesnenin belirli bir türde (class) olup olmadığını kontrol eder.
+ Yani, bir nesnenin (örneğin bir değişkenin) belirli bir türde olup olmadığını sorgular.
+
+Ne zaman kullanılır?: Nesnelerin türünü kontrol etmek için kullanılır.
+ Örneğin, bir nesnenin int, str, list veya başka bir türde olup olmadığını belirlemek için.
+Kullanım amacı: Genelde verinin türünü kontrol etmek için kullanılır, özellikle sınıflar ve nesnelerle çalışırken.
+Örnek:
+
+
+x = 5
+print(isinstance(x, int))  # True çünkü x bir integer
+
+y = "hello"
+print(isinstance(y, str))  # True çünkü y bir string
+Neden isinstance() kullanmadım?
+
+isinstance() ile, bir değişkenin tipini kontrol ediyorsunuz. Ancak burada, kullanıcıdan gelen girişin her zaman bir string olduğunu biliyoruz, ve biz string'deki her karakterin sayısal olup olmadığını kontrol etmek istiyoruz. Bu nedenle, isinstance() kullanmak, burada uygun bir çözüm değil, çünkü rakam bir string'dir ve onu tam sayıya dönüştürmek istiyoruz.
+
+isinstance(rakam, int) ile rakam karakterinin tam sayı olup olmadığını kontrol etmek yanlış olurdu çünkü her bir karakter bir string ve rakam'ın tam sayı olup olmadığını kontrol etmek, her zaman False dönecekti. O yüzden isdigit() kullanmak daha doğru bir yöntemdir.
+
+Kısaca Özet:
+isdigit(): Bir string'in sadece sayılardan oluşup oluşmadığını kontrol etmek için kullanılır. Kullanıcıdan gelen veri bir string olduğundan, her karakterin sayısal olup olmadığını kontrol etmek için idealdir.
+isinstance(): Nesnelerin türünü kontrol etmek için kullanılır, ancak burada rakam her zaman bir string olduğundan, isdigit() ile her karakterin sayısal olup olmadığını kontrol etmek daha doğru olur.

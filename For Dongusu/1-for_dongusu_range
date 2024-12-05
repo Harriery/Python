@@ -1,0 +1,36 @@
+string = "Yasin"
+for i in string:
+    print(i)
+"""
+Y
+a
+s
+i
+n
+"""
+liste = ["Elma", "Armut", "Kiraz"]
+
+for i in liste:
+    print(i)
+
+"""
+Elma
+Armut
+Kiraz
+"""
+
+#range() fonlsiyonu icine aldigi parametreleri kullanarak bize bir liste olusturuyor.
+#print(*range()) * kullanmak gerekir print icerisinde kullanabilmek icin.
+print("range fonksiyonu kullanimi:")
+print(*range(10))
+#print(*range(10)) 0'dan baslayarak 10á kadar bir liste olusturur. 0 1 2 3 4 5 6 7 8 9 seklinde
+print("iki parametre ile range kullanimi: ")
+print(*range(2,10))     #2'den baslar 10'a kadar bir liste olusturur. 2 3 4 5 6 7 8 9
+
+print("uc parametre ile range kullanimi: ")
+print(*range(1, 10, 3))     #1'den baslayarak 10'a kadar 3'er sayi atlayarak bir liste olusturur. 1 4 7 
+
+#for dongusunde kullanimi:
+
+for i in range(1,10,2):
+    print(i)            # 1 3 5 7 9 seklinde bastirir.
