@@ -17,4 +17,5 @@ print(int_sirala_buyukten_kucuge) #[97, 86, 74, 68, 56, 53, 52, 48, 41, 32]
 
 # [x for x in ...]: Bu, Python'da liste oluşturma (list comprehension) yöntemidir. int olan elemanları yeni bir listeye koyar.
 # for x in liste: Listenin her bir elemanını sırayla alır ve x değişkenine koyar.
-# if isinstance(x, int): Her elemanın türünü kontrol eder. Eğer eleman int türündeyse (yani bir sayıysa), bu elemanı alır.
+# if isinstance(x, int): Her elemanın türünü kontrol eder.
+#  Eğer eleman int türündeyse (yani bir sayıysa), bu elemanı alır.
