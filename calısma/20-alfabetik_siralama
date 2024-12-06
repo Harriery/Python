@@ -1,0 +1,19 @@
+def alfabetik_sirala(metin):
+    # Metni kelimelere ayır
+    kelimeler = metin.split()
+    
+    # Kelimeleri alfabetik olarak sırala
+    sirali_kelimeler = sorted(kelimeler)
+    
+    # Sıralanan kelimeleri tekrar birleştir
+    return " ".join(sirali_kelimeler)
+
+# Kullanıcıdan metin alma
+metin = input("Bir metin giriniz: ")
+
+# Fonksiyonu çağırıp sonucu yazdır
+print(alfabetik_sirala(metin))
+
+# split(): Bu fonksiyon metni, her boşluk karakterinden (veya başka bir ayırıcıdan) ayırarak bir listeye dönüştürür.
+# sorted(): Bu fonksiyon, bir listeyi alfabetik olarak sıralar. Bu, kelimeleri sıralamak için oldukça kullanışlıdır.
+# join(): Bu fonksiyon, sıralanan kelimeleri tekrar birleştirir ve tek bir metin halinde döndürür.
