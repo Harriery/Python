@@ -3,6 +3,7 @@ cumle = input("Bir cümle girin: ")
 
 # Cümleyi kelimelere ayırir ve bir liste olusturur (boşluklara göre)
 kelimeler = cumle.split()
+print(kelimeler)
 
 # Her bir kelimenin uzunluğunu hesapla ve bir listeye kaydet
 kelime_uzunluklari = [len(kelime) for kelime in kelimeler]
