@@ -1,0 +1,24 @@
+{
+  "gorevler": [
+    {
+      "id": "1",
+      "gorev": "Ilk todom Eklendi",
+      "durum": "Tamamlandi"
+    },
+    {
+      "id": "2",
+      "gorev": "Ucuncu Todo mu ekledim",
+      "durum": "Bekliyor"
+    },
+    {
+      "id": "3",
+      "gorev": "3.Hafta odevimi bitirdim",
+      "durum": "Tamamlandi"
+    },
+    {
+      "id": "4",
+      "gorev": "Hackerrank odevleri yapilacak",
+      "durum": "Bekliyor"
+    }
+  ]
+}
